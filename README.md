@@ -1,6 +1,6 @@
 ## Proj 섯다 안드로이드 게임 어플리케이션
 첫 안드로이드 프로젝트<br/>
-기본적인 기능을 위주로 구현해본 섯다 게임 앱 입니다<hr/>
+기본적인 기능을 위주로 구현해본 섯다 게임 앱 입니다.<hr/>
 ### android app with android studio
 <img src = "https://miro.medium.com/max/700/1*98MZF039wW7qw_TdtDzvmg.png" width="300">
 #회원가입, 로그인, 계정찾기 뷰 구현
