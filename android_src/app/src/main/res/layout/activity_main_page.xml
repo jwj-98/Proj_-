@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    >
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        android:scaleType="centerInside"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_login"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:scaleType="centerInside"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|right"
+
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="logout"
+            android:textSize="10dp"
+            android:background="@drawable/gradient02"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded05"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="150dp"
+        android:layout_marginHorizontal="100dp">
+
+        <ImageView
+            android:layout_marginLeft="2dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/coin"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewGold"
+            android:textColor="#FFA000"
+            android:text="0 원"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:layout_marginTop="2dp"
+            />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnGameStart"
+        android:layout_width="175dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/start"
+        android:visibility="visible"
+        android:layout_marginBottom="25dp"
+        />
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/button2"-->
+<!--        android:layout_width="275dp"-->
+<!--        android:layout_height="175dp"-->
+<!--        android:layout_gravity="center_horizontal|bottom"-->
+<!--        android:background="@drawable/start1"-->
+<!--        android:visibility="invisible"-->
+<!--        />-->
+
+
+</FrameLayout>

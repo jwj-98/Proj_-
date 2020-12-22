@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    >
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        android:scaleType="centerInside"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_login"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:scaleType="centerInside"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="25dp"
+            android:padding="25dp"
+            android:background="@drawable/rounded"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="계정찾기"
+                    android:textSize="35dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 해당 email로 발송됩니다."
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:background="@drawable/rounded02"
+                android:id="@+id/editTextFindAccountName"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  이름을 입력해주세요."
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:background="@drawable/rounded02"
+                android:id="@+id/editTextFindAccountEmail"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  등록한 email을 입력해주세요."
+                android:inputType="textEmailAddress"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E65100"
+                android:text="보 내 기"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/textViewCreateAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="email을 분실하셨을 경우 고객센터로 문의 바랍니다."
+                    android:textColor="#000000"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right"
+        android:text="mjc@last_project_2019 "
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:textColor="#000000"/>
+</FrameLayout>

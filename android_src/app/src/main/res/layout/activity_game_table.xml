@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/screen0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="219dp"
+        android:background="@drawable/gradient"
+        tools:layout_editor_absoluteY="188dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/me"
+                android:layout_width="190dp"
+                android:layout_height="145dp"
+                android:background="@drawable/boder"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="55dp"
+                />
+            <ImageView
+                android:id="@+id/imgViewMyProfile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profileimage"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="132dp"
+                android:layout_marginLeft="122dp"
+                />
+
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewMyNick"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="85dp"
+                android:text="한글다섯자"
+                android:background="@drawable/rounded08"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="122dp"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/imgViewMyFirstCard"
+                android:layout_width="50dp"
+                android:layout_height="243dp"
+                android:layout_toRightOf="@+id/me"
+                android:layout_marginTop="475dp"
+                android:layout_marginLeft="-118dp"
+                android:src="@drawable/card18"
+                />
+
+            <ImageView
+                android:id="@+id/imgViewMySecondCard"
+                android:layout_width="50dp"
+                android:layout_height="243dp"
+                android:layout_toRightOf="@+id/me"
+                android:layout_marginTop="475dp"
+                android:layout_marginLeft="-63dp"
+                android:src="@drawable/cardback" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/rounded05"
+                android:layout_marginHorizontal="125dp">
+
+                <ImageView
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/coin"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewMyGold"
+                    android:textColor="#FFA000"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:textSize="10dp"
+                    android:paddingRight="5dp"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/user1"
+                android:layout_width="190dp"
+                android:layout_height="140dp"
+                android:background="@drawable/boder"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="240dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                />
+            <ImageView
+                android:id="@+id/imgViewUser1Profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profileimage"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="425dp"
+                android:layout_marginLeft="20dp"
+                />
+
+
+            <TextView
+                android:layout_width="50dp"
+                android:id="@+id/textViewUser1Nick"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgViewUser1Profile"
+                android:layout_marginTop="-420dp"
+                android:text="한글다섯자"
+                android:background="@drawable/rounded08"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/imgViewUser1FirstCard"
+                android:layout_width="50dp"
+                android:layout_height="243dp"
+                android:layout_toRightOf="@+id/user1"
+                android:layout_marginTop="180dp"
+                android:layout_marginLeft="-120dp"
+                android:src="@drawable/cardback"
+                />
+
+            <ImageView
+                android:id="@+id/imgViewUser1SecondCard"
+                android:layout_width="50dp"
+                android:layout_height="243dp"
+                android:layout_toRightOf="@+id/user1"
+                android:layout_marginTop="180dp"
+                android:layout_marginLeft="-65dp"
+                android:src="@drawable/cardback" />
+
+            <LinearLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="355dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/rounded05">
+
+                <ImageView
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/coin"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewUser1Gold"
+                    android:textColor="#FFA000"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:textSize="10dp"
+                    android:paddingRight="5dp"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/user2"
+                android:layout_width="190dp"
+                android:layout_height="140dp"
+                android:background="@drawable/boder"
+                android:layout_marginTop="240dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                />
+            <ImageView
+                android:id="@+id/imgViewUser2Profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profileimage"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="425dp"
+                android:layout_marginLeft="222dp"
+                />
+
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewUser2Nick"
+                android:layout_below="@+id/imgViewUser2Profile"
+                android:layout_marginTop="-420dp"
+                android:text="한글다섯자"
+                android:background="@drawable/rounded08"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="222dp"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/imgViewUser2FirstCard"
+                android:layout_width="50dp"
+                android:layout_height="243dp"
+                android:layout_toRightOf="@+id/user2"
+                android:layout_marginTop="180dp"
+                android:layout_marginLeft="-130dp"
+                android:src="@drawable/cardback"
+                />
+
+            <ImageView
+                android:id="@+id/imgViewUser2SecondCard"
+                android:layout_width="50dp"
+                android:layout_height="243dp"
+                android:layout_toRightOf="@+id/user2"
+                android:layout_marginTop="180dp"
+                android:layout_marginLeft="-75dp"
+                android:src="@drawable/cardback" />
+            <LinearLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="355dp"
+                android:layout_toRightOf="@id/user1"
+                android:layout_marginLeft="27dp"
+                android:background="@drawable/rounded05">
+
+                <ImageView
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/coin"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewUser2Gold"
+                    android:textColor="#FFA000"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:textSize="10dp"
+                    android:paddingRight="5dp"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/user3"
+                android:layout_width="190dp"
+                android:layout_height="140dp"
+                android:background="@drawable/boder"
+                android:layout_below="@+id/user1"
+                android:layout_marginLeft="10dp"
+                />
+            <ImageView
+                android:id="@+id/imgViewUser3Profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profileimage"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="280dp"
+                android:layout_marginLeft="20dp"
+                />
+
+
+            <TextView
+                android:layout_width="50dp"
+                android:id="@+id/textViewUser3Nick"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgViewUser3Profile"
+                android:layout_marginTop="-275dp"
+                android:text="한글다섯자"
+                android:background="@drawable/rounded08"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/imgViewUser3FirstCard"
+                android:layout_width="50dp"
+                android:layout_height="243dp"
+                android:layout_toRightOf="@+id/user1"
+                android:layout_marginTop="325dp"
+                android:layout_marginLeft="-120dp"
+                android:src="@drawable/cardback"
+                />
+
+            <ImageView
+                android:id="@+id/imgViewUser3SecondCard"
+                android:layout_width="50dp"
+                android:layout_height="243dp"
+                android:layout_toRightOf="@+id/user1"
+                android:layout_marginTop="325dp"
+                android:layout_marginLeft="-65dp"
+                android:src="@drawable/cardback" />
+            <LinearLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="114dp"
+                android:layout_below="@+id/user1"
+                android:layout_marginLeft="27dp"
+                android:background="@drawable/rounded05">
+
+                <ImageView
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/coin"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewUser3Gold"
+                    android:textColor="#FFA000"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:textSize="10dp"
+                    android:paddingRight="5dp"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/user4"
+                android:layout_width="190dp"
+                android:layout_height="140dp"
+                android:background="@drawable/boder"
+                android:layout_below="@+id/user2"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/imgViewUser4Profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profileimage"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="280dp"
+                android:layout_marginLeft="222dp"
+                />
+
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewUser4Nick"
+                android:layout_below="@+id/imgViewUser2Profile"
+                android:layout_marginTop="-275dp"
+                android:text="test_"
+                android:background="@drawable/rounded08"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="222dp"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/imgViewUser4FirstCard"
+                android:layout_width="50dp"
+                android:layout_height="243dp"
+                android:layout_toRightOf="@+id/user2"
+                android:layout_marginTop="325dp"
+                android:layout_marginLeft="-130dp"
+                android:src="@drawable/cardback"
+                />
+
+            <ImageView
+                android:id="@+id/imgViewUser4SecondCard"
+                android:layout_width="50dp"
+                android:layout_height="243dp"
+                android:layout_toRightOf="@+id/user2"
+                android:layout_marginTop="325dp"
+                android:layout_marginLeft="-75dp"
+                android:src="@drawable/cardback" />
+
+            <LinearLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/user2"
+                android:layout_marginTop="114dp"
+                android:layout_marginLeft="27dp"
+                android:layout_toRightOf="@id/user3"
+                android:background="@drawable/rounded05">
+
+                <ImageView
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/coin"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewUser4Gold"
+                    android:textColor="#FFA000"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:textSize="10dp"
+                    android:paddingRight="5dp"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/invisible"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:layout_centerInParent="true"
+                />
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textColor="#BFFFFFFF"
+                android:shadowColor="#000000"
+                android:background="@drawable/rounded07"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:text="나가기"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:layout_margin="3dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/invisible"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="80dp"
+                android:paddingHorizontal="15dp"
+                android:background="@drawable/rounded06">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/invisible"
+                    android:layout_centerHorizontal="true"
+                    android:text="판돈 :"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/textViewTableMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/invisible"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="right"
+                    android:text="원"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/btnDie"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:background="@drawable/dieon"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible"
+                ></ImageButton>
+            <ImageButton
+                android:id="@+id/btnHalf"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:background="@drawable/halfon"
+                android:layout_toRightOf="@+id/btnCall"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible"
+                ></ImageButton>
+            <ImageButton
+                android:id="@+id/btnCall"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:background="@drawable/callon"
+                android:layout_toRightOf="@+id/btnCheck"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible"
+                ></ImageButton>
+            <ImageButton
+                android:id="@+id/btnCheck"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/checkon"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/btnDie"
+                android:visibility="visible"
+                ></ImageButton>
+<!--            <ImageButton-->
+<!--                android:id="@+id/btnDie"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:background="@drawable/다이off"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:visibility="invisible"-->
+<!--                ></ImageButton>-->
+<!--            <ImageButton-->
+<!--                android:id="@+id/call1"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:background="@drawable/콜off"-->
+<!--                android:layout_toRightOf="@+id/check"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:visibility="invisible"-->
+<!--                ></ImageButton>-->
+<!--            <ImageButton-->
+<!--                android:id="@+id/half1"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:background="@drawable/하프off"-->
+<!--                android:layout_toRightOf="@+id/call"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:visibility="invisible"></ImageButton>-->
+
+            <ImageView
+                android:id="@+id/ImgViewThrowCard"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:src="@drawable/cardback"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/user1Msg"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="message"
+                android:layout_alignTop="@id/user1"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/boder02"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="-8dp"
+                android:paddingBottom="2dp"
+                />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/user2Msg"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="message"
+                android:layout_alignTop="@id/user2"
+                android:layout_marginRight="55dp"
+                android:background="@drawable/boder02"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="-8dp"
+                android:paddingBottom="2dp"
+                />
+            <TextView
+                android:id="@+id/user3Msg"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="message"
+                android:layout_alignTop="@id/user3"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/boder02"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="-8dp"
+                android:paddingBottom="2dp"
+                />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/user4Msg"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="message"
+                android:layout_alignTop="@id/user4"
+                android:layout_marginRight="55dp"
+                android:background="@drawable/boder02"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="-8dp"
+                android:paddingBottom="2dp"
+                />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/myMsg"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="message"
+                android:layout_alignTop="@id/me"
+                android:background="@drawable/boder02"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="-5dp"
+                android:paddingBottom="2dp"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
