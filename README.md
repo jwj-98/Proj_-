@@ -5,6 +5,7 @@
 <img src = "https://miro.medium.com/max/700/1*98MZF039wW7qw_TdtDzvmg.png" width="300">
 #회원가입, 로그인, 계정찾기 뷰 구현<br/>
 #게임 테이블 뷰, 에니메이션 기능으로 화투 패 배분 등 동작 구현<hr/>
+
 ### web server with eclipse(jsp+tomcat), local Oracle DB
 <img src = "https://algol.dev/wp-content/uploads/2020/10/logo-eclipse.png" width="170"><img src = "https://mblogthumb-phinf.pstatic.net/MjAxODAzMDRfNDIg/MDAxNTIwMTQ4ODYzNTI1.pafkG0llpCTnavxBCXoBl4stv5nDS3P-Xcj5CbZF9c8g.Eai6_HfOtmc45TPcoi4rZr0vQk0pu_LRvjigYShqu50g.PNG.feel940/image_1154452801520148641525.png?type=w800" width="200"><img src = "https://www.baaer.eu/wp-content/uploads/2018/07/Slide1.jpg" width="330">
 
