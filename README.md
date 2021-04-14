@@ -3,7 +3,8 @@
 기본적인 기능을 위주로 구현해본 섯다 게임 앱 입니다.<hr/>
 ### android app with android studio
 <img src = "https://miro.medium.com/max/700/1*98MZF039wW7qw_TdtDzvmg.png" width="300">
-#회원가입, 로그인, 계정찾기 뷰 구현<br/>
+#회원가입, 로그인, 계정찾기 뷰 구현
+<br/>
 #게임 테이블 뷰, 에니메이션 기능으로 화투 패 배분 등 동작 구현<hr/>
 
 ### web server with eclipse(jsp+tomcat), local Oracle DB
