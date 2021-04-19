@@ -3,16 +3,21 @@
 
 
 ## 목차
-* 들어가며
-  1. 프로젝트 소개  
-    1-1. 프로젝트 기능
+* 프로젝트 소개  
+    1. 프로젝트 기능
+    2. 프로젝트 개발 환경
+    3. 프로젝트 동작
+    4. 실행 영상
+* Front-End(Android App)
+    
+    1.  레이아웃, 클래스 구성
 <hr/>
 1. 프로젝트 소개<br/>
-&nbsp;&nbsp;첫 안드로이드 프로젝트<br/>
+&nbsp;&nbsp;안드로이드 공부 후 처음으로 만들어본 프로젝트입니다.<br/>
 안드로이드 앱의 기본적인 기능 위주로
-웹서버, 게임 서버를 연동해 구현해본 섯다 게임 앱입니다.<hr/>
+웹서버, 게임 서버를 연동해 구현해본 온라인 섯다 게임 앱입니다.
 
-1_1. 프로젝트 기능<br/>
+1-1. 프로젝트 기능<br/>
 &nbsp;&nbsp;동시에 5명까지 참가가 가능한 실시간 섯다게임.
 
 * 기본 기능
@@ -24,23 +29,47 @@
 	    * 화투 패 배분 (ObjectAnimator)
 	    * 배팅 후 승패 판정
 
-### 앱 개발환경 android studio
-<img src = "https://miro.medium.com/max/700/1*98MZF039wW7qw_TdtDzvmg.png" width="300">
+1-2. 프로젝트 개발환경<br/>
+&nbsp;&nbsp; OS: WINDOWS10
+&nbsp;&nbsp; IDE: ECLIPSE 4, Android Studio 4
+&nbsp;&nbsp; DB: Oracle 11g
 
-#회원가입, 로그인, 계정찾기 뷰 구현
+1-3. 프로젝트 동작<br/>
+&nbsp;&nbsp; 유저가 Front-end(앱)을 통해 사용자 인증, 조회 요청시 localDB를 조회해 처리합니다. 이때 POST 메소드를 사용해 통신합니다. Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로운 스레드를 생성함과 동시에 현재 진행중인 게임 유저 수 의 따른 순서번호를 부여합니다. 게임이 진행되면 Back-end(소켓서버) 에서 화투패를 섞고 순서대로 배분합니다. 배분과 배팅이 모두 끝나면 승리한 유저에게 게임머니(소켓서버-웹-localDB 통신)를 지급하고 첫순서를 부여합니다.<br/>
 
-#게임 테이블 뷰 -  에니메이션 기능으로 화투 패 배분 등 동작 구현<hr/>
+1-4. 실행 영상<br/>
+<hr/>
 
-### 웹서버 개발환경 Java eclipse(jsp+tomcat), 데이터베이스 local Oracle DB
-<img src = "https://algol.dev/wp-content/uploads/2020/10/logo-eclipse.png" width="170"><img src = "https://mblogthumb-phinf.pstatic.net/MjAxODAzMDRfNDIg/MDAxNTIwMTQ4ODYzNTI1.pafkG0llpCTnavxBCXoBl4stv5nDS3P-Xcj5CbZF9c8g.Eai6_HfOtmc45TPcoi4rZr0vQk0pu_LRvjigYShqu50g.PNG.feel940/image_1154452801520148641525.png?type=w800" width="200"><img src = "https://www.baaer.eu/wp-content/uploads/2018/07/Slide1.jpg" width="330">
+## Front-End(Android App)
 
+1. 레이아웃, 클래스 구성
+>java src 
+>>CreateNick
+>>CreateNickRegister
+>>FindAccount
+>>FindAccountRegister
+>>GameTable
+>>LoginActivity
+>>LoginRegister
+>>mainPage
+>>SignupActivity
+>>SignupRegister
+>>socketTest
+>>SocketTestRegister
+>>UserInfo
+>>UserInfoRegister
 
-#회원가입, 로그인, 계정찾기 응답 수행 웹, 로컬DB와 연동
+>xml layout
+>>activity_create_nick
+>>activity_find_account
+>>activity_game_table
+>>activity_login
+>>activity_main_page
+>>activity_signup
 
-#게임, 인증 정보 응답<hr/>
-### 소켓서버 개발환경 Java eclipse
-<img src = "https://algol.dev/wp-content/uploads/2020/10/logo-eclipse.png" width="170">
+#### CreateNick.java<br/>
+&nbsp;&nbsp; 유저 첫 로그인 시 보여지는 액티비티에서 받은 닉네임을 AsyncTack를 상속받은 CreateNickRegister 객체로 Back-end(웹)로 전송합니다.<br/>
 
-#실시간 게임에 필요한 데이터 소켓통신
+#### CreateNickRegister.java
 
-#유저 순서, 입장·퇴장 실시간 처리</hr>
+&nbsp;&nbsp; 메인 스레드에서의 HTTP통신을 권장하지않으므로 AsyncTask를 상속받은 클래스로 Back-end(웹)와 통신합니다.
