@@ -106,7 +106,9 @@ result: 게임 결과를 보여줍니다. 끗, 땡 등 패결과를 액티비티
 
 액티비티에서 나가기 버튼을 누를경우 퇴장 데이터를 Back-end(게임서버)로 보내고 메인 액티비티로 이동시킵니다.<br/>
 
-패를뒤집거나 이동시키는 애니메이션은 TranslateAnimation 과 ObjectAnimator객체를 사용합니다.
+패를뒤집거나 이동시키는 애니메이션은 TranslateAnimation 과 ObjectAnimator객체를 사용합니다.<br/>
+
+서비스로 배경음악을 설정할 경우 onRestart실행 시 중복으로 배경음악이 나오는 경우가 있어 각 액티비티마다 배경음악을 따로 설정합니다.
 
 #### LoginActivity<br/>
 #### LoginRegister<br/>
