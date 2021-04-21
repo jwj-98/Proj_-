@@ -108,7 +108,7 @@ result: 게임 결과를 보여줍니다. 끗, 땡 등 패결과를 액티비티
 
 패를뒤집거나 이동시키는 애니메이션은 TranslateAnimation 과 ObjectAnimator객체를 사용합니다.<br/>
 
-서비스로 배경음악을 설정할 경우 onRestart실행 시 중복으로 배경음악이 나오는 경우가 있어 각 액티비티마다 배경음악을 따로 설정합니다.
+서비스로 배경음악을 설정할 경우 onRestart 단계에서 중복으로 배경음악이 나오는 경우가 있어 각 액티비티마다 배경음악을 따로 설정합니다.
 
 #### LoginActivity<br/>
 #### LoginRegister<br/>
