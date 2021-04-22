@@ -1,3 +1,4 @@
+
 # 안드로이드 섯다 게임 앱
 ![main](https://user-images.githubusercontent.com/65906245/115261992-13c43680-a16f-11eb-9688-6df67ba30da2.PNG)
 
@@ -23,11 +24,11 @@
 
 	* 기본 기능
 	    * 유저 로그인 가능
-		    * 로그인, 회원가입 - 로컬DB에 정보 저장, 조회
+		    * 로그인, 회원가입 - Back-end(웹)로컬DB에 정보 저장, 조회
 		    * 계정찾기(email)  - 회원정보 DB조회 후 email로 정보전송
 	    * 게임 기능
 		    * 입장/퇴장, 직전승리에 따른 패 순서, 방향 부여
-		    * 화투 패 배분 (ObjectAnimator)
+		    * 화투 패 배분 (ObjectAnimator & TranslateAnimation)
 		    * 배팅 후 승패 판정
 
 2. 프로젝트 개발환경<br/><br/>
@@ -37,7 +38,7 @@
 
 3. 프로젝트 동작<br/><br/>
 &nbsp;&nbsp; 유저가 Front-end(앱)을 통해 사용자 인증, 조회 요청시 localDB를 조회해 처리합니다. 이때 POST 메소드를 사용해 통신합니다. Front-end 에서 게임시작 요청시 Back-end(소켓서버) 에서는 새로운 스레드를 생성함과 동시에 현재 진행중인 게임 유저 수 의 따른 고유한 순서번호를 부여합니다. 게임이 진행되면 Back-end(소켓서버) 에서 화투패를 섞고 순서대로 배분합니다. 배분과 배팅이 모두 끝나면 승리한 유저에게 게임머니(소켓서버-웹-localDB 통신)를 지급하고 첫순서를 부여합니다.
-<br/>&nbsp;&nbsp; Json구조에 대해 알지 못할때 만든 프로젝트이기 때문에 거의 모든통신을 수동으로, 세미콜론 단위로 구분하는 get방식으로 데이터 작성후 post메소드로 전송하는 방식을 사용했습니다.<br/>
+<br/>&nbsp;&nbsp; Json구조에 대해 알지 못할때 만든 프로젝트이기 때문에 거의 모든통신을 수동으로,각 데이터를 세미콜론 단위로 구분하는  get방식과 유사한 방식을 사용해 통신합니다.(socket & http-post method)<br/>
 
 4. 실행 영상<br/><br/>
 <hr/>
@@ -56,8 +57,6 @@
 >>mainPage<br/>
 >>SignupActivity<br/>
 >>SignupRegister<br/>
->>socketTest<br/>
->>SocketTestRegister<br/>
 >>UserInfo<br/>
 >>UserInfoRegister<br/>
 
@@ -108,21 +107,58 @@ result: 게임 결과를 보여줍니다. 끗, 땡 등 패결과를 액티비티
 
 패를뒤집거나 이동시키는 애니메이션은 TranslateAnimation 과 ObjectAnimator객체를 사용합니다.<br/>
 
-서비스로 배경음악을 설정할 경우 onRestart 단계에서 중복으로 배경음악이 나오는 경우가 있어 각 액티비티마다 배경음악을 따로 설정합니다.
+서비스로 배경음악을 설정할 경우 onRestart 단계에서 중복으로 배경음악이 나오는 경우가 있어 각 액티비티마다 배경음악을 따로 설정합니다.<br/>
 
-#### LoginActivity<br/>
-#### LoginRegister<br/>
-#### mainPage<br/>
-#### SignupActivity<br/>
-#### SignupRegister<br/>
-#### socketTest<br/>
-#### SocketTestRegister<br/>
-#### UserInfo<br/>
-#### UserInfoRegister<br/>
+#### LoginActivity.java<br/>
 
-#### activity_create_nick<br/>
-#### activity_find_account<br/>
-#### activity_game_table<br/>
-#### activity_login<br/>
-#### activity_main_page<br/>
-#### activity_signup<br/>
+&nbsp;&nbsp; 최초실행 로그인 성공 이후 자동로그인을 지원하기위해 Shared Preferences를 사용합니다.<br/> 로그인 버튼이벤트: ID&PW값의 조건(길이, 영문 등) 검사 후  AsyncTask를 상속받은 LoginRegister객체로 Back-end(웹)로컬DB에서 값 조회 요청, 로그인 성공여부를 통신합니다. 로그인 성공 시 mainPage액티비티 인텐트 생성 후 PK로 사용하는 ID값을 추가해 해당 액티비티로 이동합니다.<br/> 회원가입&계정찾기 버튼 이벤트: 회원가입, 계정찾기 액티비티Intent 생성 후 해당 액티비티로 이동합니다.
+
+#### LoginRegister.java<br/>
+
+&nbsp;&nbsp;  메인 스레드에서의 HTTP통신을 권장하지않으므로 AsyncTask를 상속받은 클래스로 Back-end(웹)와 통신합니다.<br/>
+
+#### mainPage.java<br/>
+
+&nbsp;&nbsp; 
+
+#### SignupActivity.java<br/>
+
+&nbsp;&nbsp; Front-end(액티비티)에서 입력한 값의 유효성 검사 후 SignupRegister객체로 Back-end(웹)로 값을 전송합니다. Back-end에서 유저 중복검사 후 회원 가입성공 데이터를 받을 경우 현재 액티비티를 종료시켜 LoginActivity로 전환하게 합니다. <br/>
+
+#### SignupRegister.java<br/>
+
+&nbsp;&nbsp;  메인 스레드에서의 HTTP통신을 권장하지않으므로 AsyncTask를 상속받은 클래스로 Back-end(웹)와 통신합니다.<br/>
+
+#### UserInfo.java<br/>
+
+&nbsp;&nbsp; 
+
+#### UserInfoRegister.java<br/>
+
+&nbsp;&nbsp;  메인 스레드에서의 HTTP통신을 권장하지않으므로 AsyncTask를 상속받은 클래스로 Back-end(웹)와 통신합니다.<br/>
+
+
+#### activity_create_nick.xml<br/>
+
+
+
+#### activity_find_account.xml<br/>
+
+
+
+#### activity_game_table.xml<br/>
+
+
+
+#### activity_login.xml<br/>
+
+
+
+#### activity_main_page.xml<br/>
+
+
+
+#### activity_signup.xml<br/>
+
+
+
