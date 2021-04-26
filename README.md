@@ -143,16 +143,21 @@ result: 게임 결과를 보여줍니다. 끗, 땡 등 패결과를 액티비티
 
 
 #### activity_create_nick.xml<br/>
+![createNick](https://user-images.githubusercontent.com/65906245/116112801-de7d9280-a6f2-11eb-9726-b64a34e25a92.PNG)
 
-
+&nbsp;&nbsp;  회원가입 후 최초 로그인 시 게임 내에서 사용할 닉네임을 입력받는 액티비티 입니다. 입력을 받기위한 TextView 와 Button 위젯 사용.
 
 #### activity_find_account.xml<br/>
+![findAccount](https://user-images.githubusercontent.com/65906245/116112634-b2621180-a6f2-11eb-861d-190dfff2d14f.PNG)
 
 
+&nbsp;&nbsp;  회원정보를 찾기위해 이름과 email을 입력받는 액티비티 입니다. 입력을 받기위한 TextView와 Button위젯 사용.
 
 #### activity_game_table.xml<br/>
 
+![gameTable](https://user-images.githubusercontent.com/65906245/116113004-11c02180-a6f3-11eb-9cc4-02a40a2cdf80.PNG)
 
+&nbsp;&nbsp;  게임 진행을 위한 판(테이블)입니다. 게임 상황에 따라 이미지가 보이거나 보이지 않아야 하기때문에 FrameLayout 내부에 ImageView들을 위치시킵니다.
 
 #### activity_login.xml<br/>
 
