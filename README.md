@@ -1,7 +1,8 @@
 
 
 # 안드로이드 섯다 게임 앱
-![main](https://user-images.githubusercontent.com/65906245/115261992-13c43680-a16f-11eb-9688-6df67ba30da2.PNG)
+![main](https://user-images.githubusercontent.com/65906245/116114384-441e4e80-a6f4-11eb-88e5-55860ed1c218.PNG)
+
 
 
 ## 목차
@@ -145,29 +146,35 @@ result: 게임 결과를 보여줍니다. 끗, 땡 등 패결과를 액티비티
 #### activity_create_nick.xml<br/>
 ![createNick](https://user-images.githubusercontent.com/65906245/116112801-de7d9280-a6f2-11eb-9726-b64a34e25a92.PNG)
 
-&nbsp;&nbsp;  회원가입 후 최초 로그인 시 게임 내에서 사용할 닉네임을 입력받는 액티비티 입니다. 입력을 받기위한 TextView 와 Button 위젯 사용.
+&nbsp;&nbsp;  회원가입 후 최초 로그인 시 게임 내에서 사용할 닉네임을 입력받는 액티비티 입니다. 입력을 받기위한 TextView 와 Button 위젯 추가.<br/>
 
 #### activity_find_account.xml<br/>
 ![findAccount](https://user-images.githubusercontent.com/65906245/116112634-b2621180-a6f2-11eb-861d-190dfff2d14f.PNG)
 
 
-&nbsp;&nbsp;  회원정보를 찾기위해 이름과 email을 입력받는 액티비티 입니다. 입력을 받기위한 TextView와 Button위젯 사용.
+&nbsp;&nbsp;  회원정보를 찾기위해 이름과 email을 입력받는 액티비티 입니다. 입력을 받기위한 TextView와 Button위젯 추가.<br/>
 
 #### activity_game_table.xml<br/>
 
 ![gameTable](https://user-images.githubusercontent.com/65906245/116113004-11c02180-a6f3-11eb-9cc4-02a40a2cdf80.PNG)
 
-&nbsp;&nbsp;  게임 진행을 위한 판(테이블)입니다. 게임 상황에 따라 이미지가 보이거나 보이지 않아야 하기때문에 FrameLayout 내부에 ImageView들을 위치시킵니다.
+&nbsp;&nbsp;  게임 진행을 위한 판(테이블)입니다. 게임 상황에 따라 이미지가 보이거나 보이지 않아야 하기때문에 FrameLayout 내부에 ImageView들을 위치시킵니다.<br/>
 
 #### activity_login.xml<br/>
 
+![login](https://user-images.githubusercontent.com/65906245/116113884-deca5d80-a6f3-11eb-8a1e-ea932367778d.PNG)
+
+&nbsp;&nbsp;  로그인을 위해 ID과 비밀번호를 입력받는 액티비티 입니다. 입력 및 회원 서비스를 위해 TextView와 Button위젯 추가.<br/>
 
 
 #### activity_main_page.xml<br/>
 
+![main](https://user-images.githubusercontent.com/65906245/116114384-441e4e80-a6f4-11eb-88e5-55860ed1c218.PNG)
 
+&nbsp;&nbsp; 로그인 성공 후 보여지는 메인 액티비티입니다. 접속한 유저의 게임머니를 표시합니다. 게임시작을 위한 Button 위젯 추가.<br/>
 
 #### activity_signup.xml<br/>
 
+![signup](https://user-images.githubusercontent.com/65906245/116114722-965f6f80-a6f4-11eb-902d-992eb0d57e01.PNG)
 
-
+&nbsp;&nbsp; 회원가입을 위한 액티비티 입니다. 입력을위한 TextEdit, RadioGroup및 Button 위젯 추가.<br/>
