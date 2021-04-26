@@ -111,7 +111,7 @@ result: 게임 결과를 보여줍니다. 끗, 땡 등 패결과를 액티비티
 
 패를뒤집거나 이동시키는 애니메이션은 TranslateAnimation 과 ObjectAnimator객체를 사용합니다.<br/>
 
-서비스로 배경음악을 설정할 경우 onRestart 단계에서 중복으로 배경음악이 나오는 경우가 있어 각 액티비티마다 배경음악을 따로 설정합니다.<br/>
+서비스로 배경음악을 설정할 경우 onRestart 단계에서 중복으로 배경음악이 나오는 경우가 있어 각 액티비티마다 배경음악을 따로 설정합니다.(MediaPlayer) <br/>
 
 #### LoginActivity.java<br/>
 
@@ -123,7 +123,7 @@ result: 게임 결과를 보여줍니다. 끗, 땡 등 패결과를 액티비티
 
 #### mainPage.java<br/>
 
-&nbsp;&nbsp; 유저 정보 조회에 pk로 사용되는 id값을 SharedPreferences에서 가져와 Back-end(웹) 에 유저정보 조회를 요청합니다. 받은 유저 정보를 액티비티에 보여줍니다. <br/> 로그아웃버튼 이벤트: 앱 실행 시 자동로그인 해제를 위해 SharedPreferences를 null로 초기화합니다. 로그인 액티비티Intent 생성 후 해당 액티비티로 이동합니다.
+&nbsp;&nbsp; 유저 정보 조회에 pk로 사용되는 id값을 SharedPreferences에서 가져와 Back-end(웹) 에 유저정보 조회를 요청합니다. 받은 유저 정보를 액티비티에 보여줍니다. <br/> 로그아웃버튼 이벤트: 앱 실행 시 자동로그인 해제를 위해 SharedPreferences를 null로 초기화합니다. 로그인 액티비티Intent 생성 후 해당 액티비티로 이동합니다.<br/>서비스로 배경음악을 설정할 경우 onRestart 단계에서 중복으로 배경음악이 나오는 경우가 있어 각 액티비티마다 배경음악을 따로 설정합니다.(MediaPlayer) <br/>
 
 #### SignupActivity.java<br/>
 
