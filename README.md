@@ -13,6 +13,7 @@
 * Front-End(Android App)
     
     1.  레이아웃, 클래스 구성
+    2.  Code comment
 <hr/>
 
 ## 프로젝트 소개<br/>
@@ -70,7 +71,7 @@
 >>activity_signup<br/>
 >
 <br/>
-2. 레이아웃, 클래스 구성
+2. Code comment
 <br/>
 
 #### CreateNick.java<br/>
