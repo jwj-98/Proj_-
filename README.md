@@ -1,4 +1,5 @@
 
+
 # 안드로이드 섯다 게임 앱
 ![main](https://user-images.githubusercontent.com/65906245/115261992-13c43680-a16f-11eb-9688-6df67ba30da2.PNG)
 
@@ -67,6 +68,10 @@
 >>activity_login<br/>
 >>activity_main_page<br/>
 >>activity_signup<br/>
+>
+<br/>
+2. 레이아웃, 클래스 구성
+<br/>
 
 #### CreateNick.java<br/>
 &nbsp;&nbsp; 유저 첫 로그인 시 보여지는 액티비티에서 받은 닉네임을 AsyncTack를 상속받은 CreateNickRegister 객체로 Back-end(웹)로 전송합니다.<br/>
@@ -119,11 +124,11 @@ result: 게임 결과를 보여줍니다. 끗, 땡 등 패결과를 액티비티
 
 #### mainPage.java<br/>
 
-&nbsp;&nbsp; 
+&nbsp;&nbsp; 유저 정보 조회에 pk로 사용되는 id값을 SharedPreferences에서 가져와 Back-end(웹) 에 유저정보 조회를 요청합니다. 받은 유저 정보를 액티비티에 보여줍니다. <br/> 로그아웃버튼 이벤트: 앱 실행 시 자동로그인 해제를 위해 SharedPreferences를 null로 초기화합니다. 로그인 액티비티Intent 생성 후 해당 액티비티로 이동합니다.
 
 #### SignupActivity.java<br/>
 
-&nbsp;&nbsp; Front-end(액티비티)에서 입력한 값의 유효성 검사 후 SignupRegister객체로 Back-end(웹)로 값을 전송합니다. Back-end에서 유저 중복검사 후 회원 가입성공 데이터를 받을 경우 현재 액티비티를 종료시켜 LoginActivity로 전환하게 합니다. <br/>
+&nbsp;&nbsp; Front-end(액티비티)에서 입력한 값의 유효성 검사 후 SignupRegister객체로 Back-end(웹)로 값을 전송합니다. Back-end에서 유저 중복검사 후 회원 가입성공 데이터를 받을 경우 완료 메세지 Toast출력 후 현재 액티비티를 종료시켜 LoginActivity로 전환하게 합니다. <br/>
 
 #### SignupRegister.java<br/>
 
@@ -131,11 +136,11 @@ result: 게임 결과를 보여줍니다. 끗, 땡 등 패결과를 액티비티
 
 #### UserInfo.java<br/>
 
-&nbsp;&nbsp; 
+&nbsp;&nbsp; Back-end(웹-로컬DB)에서 가져온 유저 정보를 저장 할 객체입니다. 유저 id, nick, gold 생정자.
 
 #### UserInfoRegister.java<br/>
 
-&nbsp;&nbsp;  메인 스레드에서의 HTTP통신을 권장하지않으므로 AsyncTask를 상속받은 클래스로 Back-end(웹)와 통신합니다.<br/>
+&nbsp;&nbsp;  메인 스레드에서의 HTTP통신을 권장하지않으므로 AsyncTask를 상속받은 클래스로 Back-end(웹)와 통신합니다. pk로 사용되는 user ID 로 유저정보를 요청해 UserInfo객체로 리턴합니다.<br/>
 
 
 #### activity_create_nick.xml<br/>
