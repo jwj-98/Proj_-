@@ -69,12 +69,8 @@
 >>activity_login<br/>
 >>activity_main_page<br/>
 >>activity_signup<br/>
->
-<br/>
 
-### 3. Code comment
-
-<br/>
+### 2. Code comment
 
 #### CreateNick.java<br/>
 &nbsp;&nbsp; 유저 첫 로그인 시 보여지는 액티비티에서 받은 닉네임을 AsyncTack를 상속받은 CreateNickRegister 객체로 Back-end(웹)로 전송합니다.<br/>
